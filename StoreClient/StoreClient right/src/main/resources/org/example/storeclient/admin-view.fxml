@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.storeclient.AdminViewController">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="600" fitWidth="1000">
+        <Image url="@images/1000_F_281497631_KDF8bxKQGz02VhGpi1cMVvrvSySises2.jpg" /> <!-- Update the path to your image -->
+    </ImageView>
+
+    <!-- Overlaying UI Elements -->
+    <VBox alignment="CENTER" prefHeight="562.0" prefWidth="1034.0" spacing="20" style="-fx-background-color: transparent;">
+        <HBox alignment="BASELINE_LEFT" prefHeight="243.0" prefWidth="889.0" spacing="150">
+        <Button contentDisplay="CENTER" onAction="#handleSearchButtonClick" prefHeight="102.0" prefWidth="173.0" style="-fx-background-color: #963938FF;" text="Search">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+            </font></Button>
+
+        <Button onAction="#handleshowallrecipesButtonClick" prefHeight="102.0" prefWidth="172.0" style="-fx-background-color: #963938FF;" text="Show all recipes ">
+            <font>
+               <Font name="Berlin Sans FB Bold" size="18.0" />
+            </font></Button>
+        </HBox>
+    <HBox alignment="BASELINE_LEFT" prefHeight="194.0" prefWidth="1400.0" spacing="150">
+        <Button onAction="#handleAddRecipe1ButtonClick" prefHeight="103.0" prefWidth="176.0" style="-fx-background-color: #963938FF;" text="Add Recipe">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+            </font></Button>
+
+
+        <Button onAction="#handleDeleteRecipeButtonClick" prefHeight="101.0" prefWidth="173.0" style="-fx-background-color: #963938FF;" text="Delete Recipe">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+            </font></Button>
+    </HBox>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="222.0" prefWidth="1424.0" spacing="150">
+
+           <Button alignment="CENTER" onAction="#handleBackButtonClick" prefHeight="108.0" prefWidth="177.0" style="-fx-background-color: #963938FF;" text="Back">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" prefHeight="106.0" prefWidth="177.0">
+                <graphic>
+                    <ImageView fitWidth="177.0" fitHeight="106.0">
+                        <image>
+                            <Image url="@images/1680_298517_10150_image.jpg" /> <!-- Update the path to your image -->
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+    </HBox>
+</VBox>
+
+</StackPane>

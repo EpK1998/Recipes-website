@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.storeclient.DeleteRecipeAdminController">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="600" fitWidth="1000">
+        <Image url="@images/sweet-pancakes-picture-id1199607352.jpg" /> <!-- Update the path to your image -->
+    </ImageView>
+
+    <VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/11.0.1">
+
+        <TextField fx:id="deleteIdField" maxWidth="-Infinity" prefHeight="38.0" prefWidth="375.0" promptText="Recipe ID to Delete" style="-fx-background-color: #963938;">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></TextField>
+
+        <Button onAction="#handleDeleteRecipeButtonClick" prefHeight="67.0" prefWidth="201.0" style="-fx-background-color: #963938FF;" text="Delete Recipe">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font></Button>
+
+
+        <Button onAction="#handleBackButtonClick" prefHeight="80.0" prefWidth="83.0" style="-fx-background-color: #963938FF;" text="Back">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font></Button>
+
+    </VBox>
+</StackPane>

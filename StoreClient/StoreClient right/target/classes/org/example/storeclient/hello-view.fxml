@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="600" prefWidth="1000" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.storeclient.HelloController">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="600" fitWidth="1000">
+        <Image url="@images/top-close-up-view-vegetables-tomatoes-with-pedicels-garlic-bell-peppers-lemon-oil-onion.jpg" />
+
+    </ImageView>
+
+    <!-- Layout for Title and Buttons -->
+    <VBox alignment="BOTTOM_LEFT">
+      <Label prefHeight="276.0" prefWidth="914.0" text="Welcome to the best recipies website!" textFill="#963938">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+         </font>
+      </Label>
+      <!-- User Button -->
+      <Button onAction="#handleUserButtonClick" prefHeight="86.0" prefWidth="199.0" style="-fx-background-color: #963938FF;" text="Log in user ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Button>
+        <!-- Title with Bold and Blue color -->
+        <Label alignment="CENTER" style="-fx-font-size: 50 px; -fx-font-weight: bold; -fx-text-fill: #2196F3;" />
+
+        <!-- Horizontal Layout for Buttons -->
+<!--        <HBox alignment="CENTER" spacing="20" />-->
+         <!-- Admin Button -->
+        <HBox alignment="BASELINE_LEFT" prefHeight="243.0" prefWidth="889.0" spacing="150">
+            <Button onAction="#handleAddUserButtonClick" prefHeight="63.0" prefWidth="199.0" style="-fx-background-color: #963938FF;" text="Register">
+                <font>
+                    <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                </font>
+         </Button>
+         <Button onAction="#handleAdminButtonClick" prefHeight="63.0" prefWidth="199.0" style="-fx-background-color: #963938FF;" text="Admin">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+            </font></Button>
+          </HBox>
+    </VBox>
+
+</StackPane>

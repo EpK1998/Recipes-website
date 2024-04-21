@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.storeclient.SearchRecipeAdminController">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="600" fitWidth="1000">
+        <Image url="@images/1000_F_281497631_KDF8bxKQGz02VhGpi1cMVvrvSySises2.jpg" /> <!-- Update the path to your image -->
+    </ImageView>
+
+    <!-- Overlaying UI Elements -->
+    <VBox alignment="CENTER" spacing="20" style="-fx-background-color: transparent;">
+        <TextField fx:id="searchField" maxWidth="-Infinity" prefHeight="38.0" prefWidth="375.0" promptText="Search recipe by name" style="-fx-background-color: #963938;">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+            </font>
+        </TextField>
+        <Button onAction="#handleSearchButtonClick" prefHeight="39.0" prefWidth="211.0" style="-fx-background-color: #963938;" text="Show recipes">
+            <font>
+                <Font name="Berlin Sans FB Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <!-- Table to display recipes -->
+        <TableView fx:id="recipeTable" prefHeight="314.0" prefWidth="1000.0" style="-fx-background-color: #963938;" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="chefColumn" text="Chef" />
+                <TableColumn fx:id="titleColumn" text="Title" />
+                <TableColumn fx:id="descriptionColumn" text="Description" />
+                <TableColumn fx:id="meanRatingColumn" text="meanRating" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+
+        <Button onAction="#handleBackButtonClick" prefHeight="92.0" prefWidth="110.0" style="-fx-background-color: #963938;" text="Back">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Button>
+    </VBox>
+
+</StackPane>
