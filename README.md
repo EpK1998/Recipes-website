@@ -3,4 +3,4 @@ Recipes website using java and design using javafx. Client- server arcitecture p
 Here is the username and password for the admin:
 username : nissim
 password : barami
-note : change the pate for each daoimpl file txt to your path of the file.
+note : change the path for each daoimpl file txt to your path of the file.
